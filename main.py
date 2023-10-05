@@ -2,7 +2,6 @@ import json
 import os
 from datetime import datetime
 
-
 def help_print_cmd():
     print()
     print('Добавление новой заметки')
