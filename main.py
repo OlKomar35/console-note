@@ -51,7 +51,8 @@ for filename in os.listdir(current_dir):
 
             # Нахождение Id
             result = filename.split("_")
-            id_ = int(result[-1].split(".")[0])
+            if int(result[-1].split(".")[0]) > id_:
+                id_ = int(result[-1].split(".")[0])
             list_data.append(data)
 
 flag = True
